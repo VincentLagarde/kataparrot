@@ -1,6 +1,6 @@
 package fr.unilim.iut.kataparrot;
 
-public class Parrot {
+public abstract class Parrot {
 	protected final static double BASE_SPEED = 12.0;
 	
 	private ParrotTypeEnum type;
@@ -9,8 +9,7 @@ public class Parrot {
 		this.type = type;
 	}
 
-	public double getSpeed() {
-		throw new RuntimeException("Should be unreachable");
-	}
-
+	public abstract double getSpeed();
+	
 }
+
