@@ -2,8 +2,6 @@ package fr.unilim.iut.kataparrot;
 
 public class EuropeanParrot extends Parrot{
 
-	private static final double EUROPEAN_SPEED = 12.0;
-
 	public EuropeanParrot(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
 		super(_type, numberOfCoconuts, voltage, isNailed);
 		
@@ -15,7 +13,7 @@ public class EuropeanParrot extends Parrot{
 
 	@Override 
 	public double getSpeed() {
-		return EUROPEAN_SPEED;
+		return Parrot.BASE_SPEED;
 	}
 
 }
